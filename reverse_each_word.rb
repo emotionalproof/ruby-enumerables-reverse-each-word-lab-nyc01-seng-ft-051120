@@ -3,7 +3,7 @@ def reverse_each_word(sentence)
 
   sentence.split(" ").each do |word|
     reversed_word = word.split("")
-    word.each do |letter|
+    word.each_char do |letter|
       reversed_word.unshift(letter)
     end
     reversed_sentence << reversed_word.join
